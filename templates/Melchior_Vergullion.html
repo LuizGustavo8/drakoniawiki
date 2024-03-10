@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link href="static/wiki.css" rel="stylesheet" >
+
+        <title>DRAKONIA WIKI</title>
+
+          <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/47814a68c0.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar -->
+        <script src="static/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <body >
+        <header >
+            <div class = "container" id="nav-container">
+                <nav class = "navbar navbar-expand-lg fixed-top" id="nav">
+                    <a href="/" class="navbar-brand">
+                        <img src="static/img/DrakoniaLogoPNG.png" alt="Drakonia LOGO" style="width:90px;height:90px;"> DRAKONIA WIKI
+                    </a>
+                    <button id = "---" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button >
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="/" class="nav-item nav-link" id="home-menu">Home</a>
+                            <a href="/#mainSlider" class="nav-item nav-link" id="arcs-menu">Arcos</a>
+                            <a href="/#characters" class="nav-item nav-link" id="characters-menu">Personagens</a>
+                            <a href="/#time-line" class="nav-item nav-link" id="one-shots-menu">One-Shots</a>
+                            <a href="/#contact-area" class="nav-item nav-link" id="contact-menu">Contato</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <nav>
+            <wiki-nav></wiki-nav>
+        </nav>
+        <!-- Layout Wiki Base -->
+
+        <main class="main-page">
+
+            <wiki-page id="wiki-page" >
+                <div id="about-area">
+                    <div class="row">
+
+                            <!-- Introdução do Personagem -->
+                            <div class="col-md-6 text-wrap" style="text-align: justify;">
+
+                                <h2  id="Sobre-o-RPG">Melchior Vergullion</h3>
+
+                                <hr />
+
+                                <p><b>Melchior Vergullion</b> foi um dos protagonistas do arco <a class="ref" href="/A_Ambicao_de_Uhm" title="A Ambição de Uhm">
+                                    A Ambição de Uhm</a>, voltando a estar presente em <a class="ref" href="/A_Justica_dos_Famintos" title="A Justiça dos Famintos">A Justiça dos Famintos</a>.
+                                </p>
+
+
+                                <p >O perfil icônico do personagem é marcado pelo carâter volátil de suas memórias.
+                                    Sendo conhecido apenas como Vergullion em sua primeira aparição, sua personalidade se diferencia completamente de Melchior como era chamado
+                                    em a Justiça dos Famintos, que cronologicamente se passa antes da Ambição de Uhm.
+                                </p>
+                                <p >
+                                    Ex participante do Culto, dividido entre dimensões, a procura do irmão perdido, as incógnitas acerca desse personagem apenas se somam sem respostas.
+                                    <b>Quem será Melchior Vergullion na próxima vez que o vermos?</b>
+                                </p>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div id="card-wrap">
+                                    <div id="card" class="card" style="width: 18rem;">
+                                        <img class="img-fluid wiki" src="static/img/Melchior_Vergullion.jpeg" alt="Melchior Vergullion">
+                                        <div class="card-body">
+                                        <p class="card-text">Visual de Melchior durante a Justiça dos Famintos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Personalidade e Aparência -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Personalidade e Aparência</h3>
+
+                                <hr />
+
+                                <h5><a class="ref" href="/A_Ambicao_de_Uhm" title="A Ambição de Uhm">
+                                    A Ambição de Uhm</a></h5>
+
+                                <p> Lorem is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+
+                                <h5>A Justiça dos Famintos</h5>
+
+                                <p> Lorem is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Biografia -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Biografia</h3>
+
+                                <hr />
+
+
+                                <h5>BackStory</h5>
+
+                                <p> Lorem is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+
+                                <h5>A Ambição de Uhm</h5>
+
+                                <p> Lorem is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+
+                                <h5>A Justiça dos Famintos</h5>
+
+                                <p> Lorem is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+
+                            </div>
+
+
+                             <!-- Galeria -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+
+                                <h3  id="Sobre-o-RPG">Galeria</h3>
+
+                                <hr />
+
+                                  <div class="col-md-6">
+                                    <div id="card-wrap">
+                                        <div id="card" class="card" style="width: 18rem;">
+                                            <img class="img-fluid wiki" src="static/img/vergullion_dagger.jpg" alt="A adaga que corta dimensões">
+                                            <div class="card-body">
+                                                <h5 class="card-title">A adaga</h5>
+                                                <p class="card-text">Essa lâmina que pertecia ao irmão de Melchior é um item único, suas capacidades vão além da compreensão do portador.</p>
+                                            </div>
+                                        </div>
+                                     </div>
+                                   </div>
+
+                                   <!-- Espaço para mais Imagens -->
+
+
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+              </wiki-page>
+
+
+              <!-- Rodapé -->
+              <footer>
+                <div id="contact-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <h3 class="footer-title">Fale conosco</h3>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-tile">Ligue para:</span> (31) 4002-8922</p>
+                        <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-tile">Envie um email:</span> luiz.w8w@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-tile">Venha tomar um café:</span> Rua dos Bobos - nº 0</p>
+                        </div>
+                        <div class="col-md-6" id="msg-box">
+                        <p>Deixe uma mensagem para que o Clodoaldo nos entregue:</p>
+
+                        <div class="clodoaldo">
+                            <img src="/static/img/pigeon.jpg" alt="Clodoaldo, O pombo" style="width:175px;height:175px;">
+                        </div>
+                        </div>
+                        <div class="col-md-6" id="contact-form">
+                        <form>
+                            <input type="text" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                            <input type="submit" class="main-btn" value="Voa Mlk!">
+                        </form>
+                        </div>
+                    </div>
+
+                </div>
+                <img src="static/img/DrakoniaLogoPNG.png" alt="Logo, Logo" style="width:250px;height:250px;">
+                </div>
+                <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://www.youtube.com/watch?v=hAx4Lql_-VI" target="_blank">Blind Rooster</a> &copy; 2024</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+
+
+
+  <!-- Scripts do projeto -->
+    <script src="static/scripts.js"></script>
+    </body>
+</html>

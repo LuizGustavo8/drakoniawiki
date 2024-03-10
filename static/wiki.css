@@ -1,0 +1,605 @@
+.ref {
+  color: #240046;
+}
+
+.text-wrap {
+    margin-top:50px;
+
+}
+
+footer {
+    margin-top:150px;
+    margin-right: 300px;
+}
+
+
+body {
+    --light-gray: #f7f7fc;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #88f;
+    border-radius: 4px;
+    color: blue;
+    outline: 0;
+    font-size: 12px;
+  }
+
+  button:active {
+    background: var(--light-gray);
+  }
+
+  button.primary {
+    color: #fff;
+    background: blue;
+    border-color: blue;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: var(--light-gray);
+  }
+
+  nav {
+    border-right: 1px solid #ccd;
+  }
+
+  main {
+    padding-left: 20px;
+  }
+
+  wiki-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0 20px;
+  }
+
+  wiki-header h1,
+  wiki-header p {
+    margin: 0.25rem 0;
+    line-height: 1;
+  }
+
+  wiki-header h1 a {
+    color: inherit;
+  }
+
+  wiki-header .admin {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  wiki-header .admin button {
+    margin-left: 5px;
+  }
+
+  wiki-nav {
+    display: block;
+    overflow: hidden;
+  }
+
+  wiki-nav a {
+    display: block;
+    color: #445;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+
+  wiki-nav a:last-child {
+    border-bottom: 0;
+  }
+
+  wiki-nav a:hover {
+    text-decoration: none;
+    background: var(--light-gray);
+  }
+
+  wiki-nav a.active {
+    background: var(--light-gray);
+  }
+
+  wiki-nav .empty {
+    padding: 0.6rem 1rem;
+    color: #667;
+  }
+
+  .content > :first-child {
+    margin-top: 1rem;
+  }
+  .content hr {
+    border: 0;
+    border-top: 1px solid #ccd;
+  }
+  .content h1,
+  .content h2,
+  .content h4,
+  .content h5 { margin: 1.5rem 0; }
+  .content h1 { font-size: 2em; }
+  .content h2 { font-size: 1.7em; }
+  .content h3 { font-size: 1.4em; }
+  .content h4 { font-size: 1.3em; }
+  .content h5 { font-size: 1.1em; }
+  .content pre {
+    background: var(--light-gray);
+    padding: 1em;
+    overflow: auto;
+  }
+  .content p,
+  .content ul,
+  .content ol {
+    line-height: 1.5;
+  }
+  .content table {
+    margin: 1em 0;
+  }
+  .content blockquote {
+    border-left: 10px solid var(--light-gray);
+    margin: 1em 0;
+    padding: 1px 1.5em;
+    color: #667;
+  }
+
+  wiki-page .empty {
+    padding: 20vh 5vw 40vh 0;
+    text-align: center;
+    font-size: 23px;
+    color: #667;
+  }
+
+  wiki-page .empty button {
+    font-size: 18px;
+  }
+
+  wiki-page textarea.editor {
+    width: calc(100% - 20px);
+    height: calc(100vh - 130px);
+    margin-top: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccd;
+    font-size: 17px;
+    letter-spacing: 0.75px;
+    line-height: 1.4;
+    outline: 0;
+  }
+
+  header, .navbar {
+    background-Color: #240046
+
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+#logo {
+    width: 75px;
+
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #FFF;
+    margin: 0 10px;
+
+}
+
+.navbar-brand:hover {
+    color: #2eeaff;
+}
+
+#navbar-links a {
+    color:#FFF;
+    margin: 0 5px;
+}
+
+#navbar-links a:hover {
+    color: #2eeaff;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+.nav-item.active {
+  border-bottom: 3px solid #FFF;
+}
+
+/* Wiki Layout */
+
+
+  .main-page {
+    margin-top: 50px;
+  }
+
+  /* Footer */
+
+  .footer-title {
+    color: #2b2d42;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .footer-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+  }
+
+#contact-area {
+    text-align: center;
+  }
+
+  .contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #9300e9;
+  }
+
+  .contact-box i {
+    color: #444;
+    border: solid 1px #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact-box p {
+    font-size: 16px;
+  }
+
+  .contact-tile {
+    font-weight: bold;
+    color: #9300e9;
+  }
+
+  #msg-box p {
+    font-size: 22px;
+  }
+
+  #contact-form input[type="text"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+  }
+
+  .main-btn {
+    background-color: #9300e9;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+  }
+
+  .main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #9300e9;
+  }
+
+  #contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+  }
+
+  #contact-form .main-btn:hover {
+    color: #9300e9;
+  }
+
+  /* Copy */
+
+  #copy-area {
+    background-color: #FFF;
+  }
+
+  #copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #copy-area .container p {
+    margin-bottom: 0;
+  }
+
+  #copy-area .container a {
+    font-weight: bold;
+    color: #444;
+  }
+
+  #copy-area .container a:hover {
+    text-decoration: none;
+    color: #9300e9;
+  }
+
+  #card {
+    float: right;
+    margin-right: 300px;
+  }
+
+
+  /* responsive */
+@media(max-width: 768px) {
+
+    /* data */
+    #circle-A{
+      width: 50%;
+    }
+    #circle-B{
+      width: 50%;
+    }
+    #circle-C{
+      width: 50%;
+    }
+    #circle-D{
+      width: 50%;
+    }
+
+
+  /* geral */
+  .container {
+    padding: 20px 0;
+  }
+
+  /* slider */
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    padding-top: 25px;
+    height: auto;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  #mainSlider .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .carousel-caption {
+    left: 10%;
+    right: 10%;
+  }
+  .about-title {
+    margin-top: 30px;
+  }
+
+  /* data */
+  .circle-box div {
+    padding: 0 10px;
+  }
+
+  #data-area p {
+    font-size: 16px;
+  }
+
+  /* team */
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  /* apply */
+  #apply-area .apply-box {
+    padding: 50px 25px;
+  }
+
+  /* news */
+  #news-area p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #email-input {
+    width: 70%;
+  }
+
+  #call-area {
+    margin-top: 30px;
+  }
+
+  #call-area .container {
+    padding: 30px;
+  }
+
+  #call-area p, #call-area #call-btn {
+    font-size: 16px;
+  }
+
+}
+
+
+@media(max-width: 425px) {
+
+    footer {
+        margin-right: 0px;
+    }
+
+    .text-wrap p{
+        padding-right: 15px;
+
+    }
+    #carouselExampleIndicators {
+        margin-right: 20px;
+    }
+    #card-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card {
+        float: none;
+        margin-right: 0px;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        display: block;
+      }
+
+    .main-page {
+        margin-top: 150px;
+      }
+
+    nav {
+        display: none;
+  }
+
+
+  /* Nav Bar */
+  #nav {
+    height : 140px;
+  }
+
+  #--- {
+    background-image: url("img/toggle.png");
+    background-size: 54.5px;
+  }
+
+  #navbar-links {
+    background-color: #240046;
+  }
+
+  .nav-link {
+    text-align: right;
+  }
+
+  /* slider */
+  #mainSlider {
+    margin-top: 90px;
+  }
+
+  #mainSlider .carousel-caption {
+    top: 5%;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #mainSlider .carousel-caption p {
+    display: none;
+  }
+
+  .carousel-caption .main-btn {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+  }
+
+  /* about */
+
+  .img-fluid{
+    margin-top: 0px;
+  }
+  .main-title {
+    font-size: 30px;
+  }
+
+  #about-area img {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+
+  #team-area .col-md-3 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  /* apply */
+  #apply-area {
+    height: auto;
+  }
+
+  #company-img {
+    display: none;
+  }
+
+  /* filter */
+  #portfolio-area .filter-btn {
+    margin-bottom: 20px;
+  }
+
+  .project-box {
+    width: 50%;
+  }
+
+  /* news */
+  #news-area .main-title {
+    font-size: 24px;
+  }
+
+  #news-area p {
+    font-size: 16px;
+  }
+
+  #email-input {
+    width: 80%;
+  }
+
+  #call-area p, #call-area #call-btn {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  #call-area p, #call-area #call-btn {
+    margin: 0;
+    width: 50%;
+  }
+
+  /* contact */
+  .contact-box {
+    border: none;
+    margin-bottom: 0;
+  }
+
+}
