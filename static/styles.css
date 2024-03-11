@@ -899,6 +899,11 @@ input[data-description="3050"]:checked ~ #timeline-descriptions-wrapper h5[data-
     font-size: 14px;
   }
 
+  @media (min-width: 425px)
+.d-md-block {
+    display: block!important;
+}
+
   /* about */
 
   .img-fluid{
