@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link href="static/wiki.css" rel="stylesheet" >
+
+        <title>DRAKONIA WIKI</title>
+
+          <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/47814a68c0.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar -->
+        <script src="static/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <body >
+        <header >
+            <div class = "container" id="nav-container">
+                <nav class = "navbar navbar-expand-lg fixed-top" id="nav">
+                    <a href="/" class="navbar-brand">
+                        <img src="static/img/DrakoniaLogoPNG.png" alt="Drakonia LOGO" style="width:90px;height:90px;"> DRAKONIA WIKI
+                    </a>
+                    <button id = "---" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button >
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="/" class="nav-item nav-link" id="home-menu">Home</a>
+                            <a href="/#mainSlider" class="nav-item nav-link" id="arcs-menu">Arcos</a>
+                            <a href="/#characters" class="nav-item nav-link" id="characters-menu">Personagens</a>
+                            <a href="/#time-line" class="nav-item nav-link" id="one-shots-menu">One-Shots</a>
+                            <a href="/#contact-area" class="nav-item nav-link" id="contact-menu">Contato</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <nav>
+            <wiki-nav></wiki-nav>
+        </nav>
+        <!-- Layout Wiki Base -->
+
+        <main class="main-page">
+
+            <wiki-page id="wiki-page" >
+                <div id="about-area">
+                    <div class="row">
+
+                            <!-- Introdução do Arco -->
+                            <div class="col-md-6 text-wrap" style="text-align: justify;">
+
+                                <h3  id="Sobre-o-RPG">A Semana de Arte</h3>
+
+                                <hr />
+
+                                <p ><b>A Semana de Arte</b> não só inaugura a primeira experiência jogando no universo de Drakonia, como também,
+                                    a primeira narrativa mestrada por <b>Luiz Gustavo</b>. Iniciando em março de 2022 no sítio do Bernardo
+                                    mal sabiámos o destino de Apothemius, Fernando, Harubin, Lekko, Óbolo, Thigas e Yeuri.
+                                </p>
+                                <p >
+                                    O Sistema utilizado foi o <b>Fate Acelerado</b>, marcando a preferência por uma narrativa mais
+                                    cinematográfica.
+                                </p>
+                                <p >
+                                    A história se passa em <b>Varean</b>, a capital do país de <b>Atlan</b>. Uma metrópole tecnomágica
+                                    no núcleo do continente. Fortemente marcada por seus contrastes, esse polo urbano irreverente da miscelânea cultural
+                                    revela em sua arquitetura os traços do mais moderno em paralelo às reminiscências do clássico.
+                                </p>
+                                <p >
+                                    Acompanhando o íncio da jornada de nossos protagonistas, conhecemos suas motivações ao
+                                    ingressar nas <b>Garras da Tempestade</b>, a principal Guilda não apenas de Atlan como de toda Drakonia.
+                                    As apresentações a esse universo extenso se fundem a uma trama de mistério e tragédia, quando a
+                                    primeira missão dos ingressantes se revela muito além de suas aparências.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="card-wrap">
+                                    <div id="card" class="card" style="width: 18rem;">
+                                        <img class="img-fluid wiki" src="static/img/artista_violino.jpg" alt="Uhm, o visionário">
+                                        <div class="card-body">
+                                        <p class="card-text">O artista, muldialmente conhecido por suas performances com violino,
+                                            a extensão de seu ego era perceptível no próprio nome artistico.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Resumo do Arco -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Resumo do Arco</h3>
+
+                                <hr />
+
+                                <p>
+                                    Neste arco, acompanhamos o entrelaçar de diferentes histórias. Seja por vingança, ambição, dinheiro ou
+                                    apenas oportunidade o destino reúne nossos protagonistas na sala do mestre da Guilda de Atlan, Varthus.
+                                    Com semblante marcado pelo tempo, o sujeito sério e emblemático, informa de maneira procedural:
+
+                                </p>
+                                <p>
+                                    "Bem Vindos a Garra da Tempestade a Guilda oficial de Varean, Cidade Capital do Continente de Atlan.
+                                    Como protocolo padrão de iniciação vocês serão vinculados a um grupo, formado pelos integrantes aqui presentes.
+                                    A primeira missão como membros oficiais será vinculada de imediato: Durante essa semana, como é comum de todos os
+                                    anos ocorrer, teremos a 37º edição da Semana de Arte de Atlan. Aqui estão reunidos os mais famosos artistas do continente
+                                    e para cada dia, diferentes exposições e eventos únicos serão veiculados aos apreciadores da Arte de mais alto escalão.
+                                    Personalidades importantes de toda Drakonia estão aqui presentes e a segurança e integridade de todos os cidadãos é crucial
+                                    para o decorrer das festividades. Com isso em mente, recrutamos vocês para investigar uma série de assassinatos misteriosos
+                                    que estão acontecendo desde o início da semana. Já foram relatados 6 casos pelos oficiais locais, sendo que o último foi
+                                    encontrado ainda nesta manhã próximo ao Anfiteatro no centro da cidade. Percebendo a incapacidade de solucionar o problema
+                                    sozinhos, as autoridades solicitaram o apoio da guilda para resolver a situação. Contamos com seus esforços. Boa sorte e que
+                                    a proteção de Eon esteja sobre vocês!"
+                                </p>
+                                <h5  id="Sobre-o-RPG">A Investigação</h5>
+                                <p>
+                                    Economizando em apresentações Apothemius, Fernando, Harubin, Lekko e Yeuri, se concentram na urgência da tarefa, cruzando a cidade em direção ao local onde
+                                    foi encontrado o último corpo, o anfiteatro. Com dificuldades, devido a comoção pública no local, os protagonistas finalmente
+                                    chegam a cena do crime. Mas não antes de conhecer o motivo lotação, o ilustre artista, que alocado nos aposentos do teatro
+                                    aguardava o dia de sua apresentação.
+                                </p>
+                                <p>
+                                    Impedidos pelos seguranças, não foi possível alcançar o músico, mas o grupo consegue atravessar o local até as ruas
+                                    estreitas da parte posterior do anfiteatro, onde finalmente encontram os policiais. Devidamente idenficados o carrancudo capitão
+                                    da polícia, <b>Jonah</b>, explica a situação. Aquela era a sexta vítima, encontrada nessa manhã com o mesmo padrão das outras,
+                                    sangue completamente drenado de seus corpos, idade entre 17 e 23 anos. Sem nenhum vestígio do assassino, as únicas pistas que o
+                                    contingente reduzido da polícia tinha eram dois suspeitos.
+                                </p>
+                                <p>
+                                    Entre os principais suspeitos identificados, estaria o <b>Movimento Anti-Magia</b>, em especial seu líder <b>Ozie</b>.
+                                    Uma vez que as vítimas eram jovens de classe alta, filhos de figuras públicas que condenaram o movimento ou defenderam
+                                    abertamente o uso de magia para legítima defesa. Outra opção, seria um colega de classe das demais vítimas, <b>Marco Uragano</b>,
+                                    que segundo depoimentos tinha uma rixa muito forte com a última vítima. Além de ter sido visto próximo a região de onde um dos corpos foi encontrado.
+                                </p>
+
+                                <h5  id="Sobre-o-RPG">O Movimento Anti-Magia </h5>
+                                <p>
+                                    Desconfiando do primeiro suspeito o grupo cruza a cidade em direção aos subúrbios de  <b>Varean </b>. Deixando a região central e abastada
+                                    a maioria dos protagonistas se surpreende primeiro com a superlotação da cidade, em função das festividades da semana. E segundo, com
+                                    a rapidez com que os imponentes casarões clássicos começam a perder lugar, não só na disputava com os enormes e modernos edifícios do centro,
+                                    mas principalmente para as vielas labirínticas da periferia.
+                                </p>
+                                <p>
+                                    Encontrando um enorme e depredado depósito, os protagonistas reconhecendo o símbolo do movimento nos portões metálicos organizam um plano para infiltrar o
+                                    local sorrateiramente. Contudo, tudo caí por terra com a descoberta de uma barreira antimagia. Sem espaço para diálogo o conflito nos portões começa, enquanto
+                                    parte do grupo aproveita as distrações para entrar sem ser percebidos.
+                                </p>
+                                <p>
+                                    A confusão alarma a população que chama as autoridades, em função do pessoal reduzido há o reencontro com o capitão conhecido na parte da manhã.
+                                    Mas a situação era ruim, um dos membros do movimento havia sido assassinado na confusão por <b>Lekko</b>. E, por força da lei, este foi detido e levado para a prisão.
+                                    Enquanto isso, os demais analizavam os documentos encontrados, apenas para constatar que o grupo era sim criminoso, mas não havia conexão alguma com os assassinatos.
+                                </p>
+                                <h5  id="Sobre-o-RPG"> O Garoto </h5>
+                                <p>
+                                   Com a prisão de Lekko, uma reunião é convocada por Varthus para decidir o destino do grupo.
+                                    Ao entrar na sala, todos se surpreendem,  <b>Lekko </b>, fora das grades estava aguardando na presença do líder e outros dois desconhecidos.
+                                    2 novos ,  <b>Thigas </b> e  <b>Óbolo </b> seriam incluídos no grupo e conforme o sucesso da equipe esta seria a última chance de ingressar na guilda.
+                                </p>
+                                <p>
+                                   Restava apenas um caminho a seguir, O garoto. Acompanhados pelo Capitão Jonah, o grupo se dirige para a casa de Marco Uragano,
+                                    a fim de descobrir pistas que possam resolver o caso. Lá, eles começam um interrogatório com o garoto, que extremamente acuado tenta fugir.
+                                    Harubin impede o garoto, que em um surto para se defender, provoca a criação de planos paralelo à realidade, prendendo todos os 8 presentes em
+                                    4 versões deste plano, cada qual 2 a 2.
+                                </p>
+                                <p>
+                                   Os personagens se deparam com um enorme <b>Wyvern</b> verde protegendo <b>Marco</b>, assim como várias nuvens em um céu sem fim.
+                                    O dragão desaparece mas uma aura esverdeada acompanha o garoto. Após os confrontos das 4 duplas, eles conseguem dialogar
+                                    e convencer Marco a cooperar. Marco afirma veementemente não ter sido responsável pelas mortes e conta sua história.
+                                </p>
+                                <p>
+                                    Seu passado havia sido tortuoso com as vítimas, sendo excluído por seus colegas não por usa orientação sexual pela sua relação a magia.
+                                    Para eles a força que Marco recebia do Wyvern que o protegia fazia dele um monstro. E para seu antigo melhor amigo, a sexta vítima, ver suas aptidões serem
+                                    superadas por Marco fez com que eles rompessem ligações e que o amigo se tornasse o principal responsável pela discriminação.
+                                </p>
+                                <p>
+                                    Confirmando ter visto a última vítima na sessão de Entrevista com o Artista no dia do assassinato, ele diz ter sido
+                                    ignorado por ele após uma tentativa de reconciliação. Disse que o contato se deu na fila para tentar pegar o autógrafo,
+                                    sendo esta a última vez que o viu.
+                                </p>
+
+                                <h5  id="Sobre-o-RPG"> A Sétima Vítima </h5>
+
+                                <p>
+                                    Uma comoção no andar de baixo da casa chama a atenção. Após descerem as escadas: O grupo encontra o ajudante de <b>Jonah</b>,
+                                    aguardando-os, ele diz: “Vocês demoraram demais, foi confirmada a Sétima Vítima!”
+                                </p>
+                                <p>
+                                    A noite caí, e ao chegar em uma bifurcação escura lá está, retorcido e cheio de hematomas,
+                                    diferentemente das demais vítimas esta parecia ter apresentado resistência. A cena grotesca atrái os populares, que como moscas
+                                    rodeiam os policiais que isolam a área.
+                                </p>
+                                <p>
+                                    Uma silhueta que observava começa a levantar a suspeita dos jogadores. Ao notarem o reflexo de uma faca suja sangue destoando
+                                    na multidão curiosa, começa uma perseguição pelos becos apertados e abarrotados de gente. Perdendo de vista o suspeito, Lekko e Fernando se
+                                    vem no meio de uma feira bem movimentada, enquanto Óbolo e Apothemius notam um cheiro peculiar vindo de um beco próximo.
+                                </p>
+                                <p>
+                                    Dois reencontros curiosos acontecem simultaneamente, Lekko reconhece um homem no meio da multidão, o líder do Movimento Anti-magia. Enquanto no
+                                    beco um grupo de pessoas ri descontroladamente enquanto um homem encapuzado, com um cigarro na mão gesticula abertamente. Reconhecendo o cheiro
+                                    do cigarro rapidamente, Apothemius interrompe o homem e descobre sua identidade: O artista.
+                                </p>
+                                <p>
+                                    Desencorajado por Fernando, Lekko e os demais retornam e se reencontram com os demais no beco, onde todos interrogam o Artista.
+                                     O interrogado se demonstra medo de ser a próxima vítima, e visivelmente entorpecido confronta os investigadores que em 6 dias não
+                                    encontraram o assassino ainda. Fala estar extremamente triste com a morte do garoto, que havia aparecido em seu camarote antes do show
+                                    pedindo um autógrafo. Sem saber como lidar com gênio forte do interrogado, as suspeitas do grupo sobre ele diminuem e eles deixam que ele siga caminho,
+                                    mas não sem deixar um autógrafo com eles.
+                                </p>
+
+                                <h5  id="Sobre-o-RPG"> De Volta a Estaca Zero </h5>
+
+                                <p>
+                                    Perdidos e sem suspeitos o grupo decide se dividir, Fernando, Óbolo e Aphotemius vão até o anfiteatro,
+                                    Harubin e Lekko vão até a <b>Academia de Magia</b> e Yeuri e Thigas vão até a <b>cena do primeiro assassinato</b>. No anfiteatro,
+                                    as instalações estão misteriosamente vazias e trancadas. Na escola, a dupla descobre a presença da mesma <b>Magia
+                                    Sombria</b> na folha com a assinatura do artista e o sangue da sétima vítima. Na primeira cena, os dois restantes são
+                                    atacados por uma armadilha de sombra, revelando um sistema acionado por um fio de cabelo com mechas vermelhas.
+                                </p>
+                                <p>
+                                    Nas portas do anfiteatro, o grupo se reúne novamente. Eles só conheciam uma pessoa com aqueles fios de cabelo.
+                                    Alguém que sem levantar suspeitas, havia sido liberado por eles no dia anterior, alguém que estava esperando atrás daquelas portas.
+                                </p>
+                                <p>
+                                    Com dificuldade e esforço em conjunto finalmente consegue quebrar um <b>selo mágico</b> que trancava o local. Revelando os rastros de sangue
+                                    até a suíte principal. Nos aposentos marcas de arrastamento levam até um alçapão se escondia sob um tapete rasgado. Em seu interior, um túnel
+                                    se extendia cada vez mais profundo. A cada passo a escuridão era preenchida pelo cheiro pútrido do sangue seco e as notas do violino que
+                                    se tornavam cada vez mais altas.
+                                </p>
+
+                                 <h5  id="Sobre-o-RPG"> Confronto Final </h5>
+
+                                <p>
+                                    Com a iluminação fraca é possível perceber as paredes de pedra rocha escada dando lugar as paredes de uma construção antiga.
+                                    É possível ver a distância um espaço mais aberto, ao que parece ser a parte interna de uma pequena e muito antiga capela.
+                                    Ao pisar dentro do local um súbito arrepio paralisa todos, algum instinto primitivo parece disparar em todos ao mesmo tempo
+                                    sinalizando para sair dali o mais rápido possível. Do altar completamente escuro surgem 2 pontos vermelhos brilhantes, ao apontar a lanternas
+                                    é possível ver ao longe um homem de cabelos longos e vermelhos sentado, com o braço esquerdo ligado por um cabo a uma espécie de recipiente
+                                    quadrangular da altura de uma pessoa, feito de vidro e contendo um líquido vermelho reluzente. Atrás do recipiente, outros 6 iguais já completamente vazios.
+                                </p>
+
+                                <p>
+                                    Os cabos param de se mover e a melodia é interrompida pela risada do artista. Das enormes sombras projetadas pelos pilares centrais,
+                                    pequenas criaturas humanoides, <b>os sombrios</b>, se erguem e avançam em direção aos invasores. Ainda sentado, os olhos vibrantes em vermelho do anfitrião apenas acompanham seu
+                                    sorriso cínico que aguarda o líquido descer lentamente no reservatório ao seu lado.
+                                </p>
+
+                                 <p>
+                                    Subjulgando as criaturas o grupo avança em direção ao artista, mas são surpreendidos por garras rubras que surgem de suas próprias sombras.
+                                    Imobilizando-os e revelando a presença de dois seres bestiais com traços semelhantes aos anteriores mas porte maior e traços carmesin por todo o corpo.
+                                </p>
+
+                                <p>
+                                    A maior letalidade das bestas causa danos signicativos aos personagens, em especial Yeuri que sofre perfurações e uma concussão severa.
+                                    Mas cria espaço para que a equipe se coordene para dissapar as sombras. Finalizadas as distrações, o artista se levanta enquanto arranca de seu braço os tubos com sangue,
+                                    fazendo este jorrar por todo o altar. Estava para começar o <b>Gran Finale</b>.
+                                </p>
+                                <p>
+                                    Todo o lugar escurece derrepente e em uma explosão de luz, todas as sombras rastejam em direção ao corpo do artista.
+                                    Que começa a ser envolvido, transformado. <b>Ele</b> estava pronto para enfrentá-los.
+                                </p>
+                                <p>
+                                    Usando a escuridão ao seu favor, o inimigo se escondia e se mesclava com a escuridão enquanto desferia golpes precisos com o arco de seu violino.
+                                    O sangue dos personagens se misturava no chão com o sangue das vítimas, a exaustão começava a tomar conta e a fracasso da missão se tornava minúsculo
+                                    frente a morte eminente.
+                                </p>
+                                <p>
+                                    Mas o ego frágil do artista começou a se revelar, as provocações dos persogens foram criando brechas cada vez maiores.
+                                    Sem saber como controlar aquele imenso poder e dominado por suas emoções, o vilão foi sendo encurrala-do. Usufruindo de
+                                    sua vantagem númerica os personagens conseguem imobiliza-lo e derrota-lo. Neutralizando a ameaça, que devanece em sombras e
+                                    deixa mistérios ainda maiores para trás.
+                                </p>
+
+
+
+                            </div>
+
+                            <!-- Personagens -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+
+                                <h3  id="Sobre-o-RPG">Personagens</h3>
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Classe</th>
+                                        <th scope="col">Player</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td><a href="#">Apothemius</a></td>
+                                        <td>Thiagão</td>
+                                        <td>Barão</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td><a href="#">Fernando</a></td>
+                                        <td>Maffra</td>
+                                        <td>Advogado</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td><a href="/Harubin">Harubin</a></td>
+                                        <td>Bê</td>
+                                        <td>Druid</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td><a href="/Lekko">Lekko</a></td>
+                                        <td>Dani</td>
+                                        <td>Gunslinger</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td><a href="#">Óbolo</a></td>
+                                        <td>Brunão</td>
+                                        <td>Fighter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td><a href="#">Thigas</a></td>
+                                        <td>Thiago</td>
+                                        <td>Barberian</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td><a href="#">Yeuri</a></td>
+                                        <td>Meduza</td>
+                                        <td>Ladino</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Cenários -->
+                            <div class="col-md-10 text-wrap" style="text-align: justify;">
+
+
+                                <h3  id="">Cenários</h3>
+
+                                </hr>
+
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-block w-100" src="static/img/hall da Guilda.JPG" alt="First slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Hall da Guilda</h5>
+                                            <p>Abstração da parte interna das garras da tempestade.</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/Esconderijo dos Anti Magia.JPG" alt="Second slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Esconderijo dos Anti-Magia</h5>
+                                            <p>Dentro do galpão do Movimento Anti-Magia.</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/Entrada Externa do Teatro.jpg" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Entrada Externa do Anfiteatro</h5>
+                                            <p>Inspiração para o local onde tudo começa e acaba.</p>
+                                        </div>
+                                      </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/Início da Perseguição.JPG" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Início da Perseguição</h5>
+                                            <p> Local onde foi encontrada a sétima vítima.</p>
+                                        </div>
+                                      </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/Cripta Subterranea.jpeg" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Cripta Subterranea</h5>
+                                            <p>Palco do confronto final.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+                             </div>
+
+
+                        <!-- Galeria -->
+                          <div class="col-md-10 text-wrap" style="text-align: justify;">
+
+                              <div class="row">
+                                <div class="col-12">
+                                  <h3 class="main-title">Galeria</h3>
+                                    <hr />
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="card bottom-card">
+                                    <img src="static/img/Ele mesmo.jpg" alt="O Artista" class="card-img-top">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Ele</h5>
+                                      <p class="card-text">Personificação do ego do artista após combinar magia sombria e de sangue com sacrifício de 7 vítimas.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="card bottom-card">
+                                    <img src="static/img/sombrio.jpeg" alt="Sombrios" class="card-img-top">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Sombrios</h5>
+                                      <p class="card-text">Lacaios do Artista</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="card bottom-card">
+                                    <img src="static/img/sombrio_sangue.jpeg" alt="Sombrios de Sangue" class="card-img-top" alt="Imagem de Perfil 3">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Sombrios de Sangue</h5>
+                                      <p class="card-text">Versão melhoradas dos lacaios</p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+
+                          </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+              </wiki-page>
+
+
+              <!-- Rodapé -->
+              <footer>
+                <div id="contact-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <h3 class="footer-title">Fale conosco</h3>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-tile">Ligue para:</span> (31) 4002-8922</p>
+                        <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-tile">Envie um email:</span> luiz.w8w@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-tile">Venha tomar um café:</span> Rua dos Bobos - nº 0</p>
+                        </div>
+                        <div class="col-md-6" id="msg-box">
+                        <p>Deixe uma mensagem para que o Clodoaldo nos entregue:</p>
+
+                        <div class="clodoaldo">
+                            <img src="/static/img/pigeon.jpg" alt="Clodoaldo, O pombo" style="width:175px;height:175px;">
+                        </div>
+                        </div>
+                        <div class="col-md-6" id="contact-form">
+                        <form>
+                            <input type="text" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                            <input type="submit" class="main-btn" value="Voa Mlk!">
+                        </form>
+                        </div>
+                    </div>
+
+                </div>
+                <img src="static/img/DrakoniaLogoPNG.png" alt="Logo, Logo" style="width:250px;height:250px;">
+                </div>
+                <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://www.youtube.com/watch?v=hAx4Lql_-VI" target="_blank">Blind Rooster</a> &copy; 2024</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+
+
+
+  <!-- Scripts do projeto -->
+    <script src="static/scripts.js"></script>
+    </body>
+</html>
