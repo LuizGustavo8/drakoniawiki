@@ -1,10 +1,643 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link href="static/wiki.css" rel="stylesheet" >
+
+        <title>DRAKONIA WIKI</title>
+
+          <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/47814a68c0.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar -->
+        <script src="static/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <body >
+        <header >
+            <div class = "container" id="nav-container">
+                <nav class = "navbar navbar-expand-lg fixed-top" id="nav">
+                    <a href="/" class="navbar-brand">
+                        <img src="static/img/DrakoniaLogoPNG.png" alt="Drakonia LOGO" style="width:90px;height:90px;"> DRAKONIA WIKI
+                    </a>
+                    <button id = "---" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button >
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="/" class="nav-item nav-link" id="home-menu">Home</a>
+                            <a href="/#mainSlider" class="nav-item nav-link" id="arcs-menu">Arcos</a>
+                            <a href="/#characters" class="nav-item nav-link" id="characters-menu">Personagens</a>
+                            <a href="/#time-line" class="nav-item nav-link" id="one-shots-menu">One-Shots</a>
+                            <a href="/#contact-area" class="nav-item nav-link" id="contact-menu">Contato</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <nav>
+            <wiki-nav></wiki-nav>
+        </nav>
+        <!-- Layout Wiki Base -->
+
+        <main class="main-page">
+
+            <wiki-page id="wiki-page" >
+                <div id="about-area">
+                    <div class="row">
+
+                            <!-- Introdução do Tema -->
+                            <div class="col-md-6 text-wrap" style="text-align: justify;">
+
+                                <h2  id="Sobre-o-RPG">As Guerras Rúnicas</h3>
+
+                                <hr />
+
+                                <p>
+                                    Com o desaparecimento dos <b>8 Guardiões</b>, em função do tempo de <b>Crepúsculo</b>, o principal fator responsável 
+                                    por manter a paz se foi. Entretanto, antes mesmo do início dos 50 anos de Crepúsculo, um visionário General já 
+                                    calculava friamente seus planos.
+                                </p>
+
+
+                                <p >
+                                    Com a recente descoberta do <b>Drakônium</b> e suas aplicações, o desenvolvimento técnico em Dracokonia acelerou exponencialmente. 
+                                    A funcionalidade de um metal capaz de conduzir perfeitamente a carga mágica gerada pelas gemas ativas revolucionou inteiramente 
+                                    a produção energética em todo o mundo.
+                                </p>
+
+                                <p >
+                                    Para conseguir manipular e controlar o poder das <b>gemas</b> e distribuí-las para as estruturas feitas de Dracônium era necessário 
+                                    o desenvolvimento de uma <b>linguagem</b> capaz traduzir a magia pura em energia articulável. 
+                                </p>
+
+                                <p >
+                                    Assim surgiu o <b>sistema rúnico</b>, uma adaptação tecnomagica de selos e talismãs muito antigos, capazes de armazenar magia por milênios. 
+                                    A engenhosa transcrição foi realizada em 2912, pelo brilhante <b>Viktor Kliscor</b>, um jovem inventor do <b>Projeto Glifo</b>, a empreitada mais arrojada 
+                                    dos antigos <b>Barões de Zodresh</b>.
+                                </p>
+
+                                <p >
+                                    A invenção de Viktor marcou o início da <b>Revolução Tecnomágica</b>, mudando para sempre o mundo Drakonia. Kliscor nunca imaginava que 
+                                    seu trabalho seria capaz de acarretar os eventos que se sucederam. Os barões gananciosos patentearam sua invenção, adulterando a ideia 
+                                    original e quebrando as limitações de segurança criadas por ele. 
+
+                                </p>
+
+                                <p >
+                                    Com o mapeamento rúnico os barões em pouco tempo dominaram completamente o mercado bélico, fornecendo armas, armaduras e 
+                                    explosivos incrivelmente potentes para as nações de todo o mundo.Assim, pequenas guerras e movimentos revolucionários estouraram por toda a parte.
+                                </p>
+
+                                <p >
+                                  Nas mãos erradas, as quebras de segurança abriam brechas no funcionamento das gemas mágicas, com isso, não demorou muito para perceberem que o 
+                                  superaquecimento dos equipamentos aumentava imensamente sua capacidade mágica por alguns minutos. Contudo, esse pico de poder também causava a 
+                                  autodestruição das gemas, dessa forma, as investidas suicidas  levaram a grandes catástrofes, terrorismo e destruição em massa. 
+                                </p>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div id="card-wrap">
+                                    <div id="card" class="card" style="width: 18rem;">
+                                        <img class="img-fluid wiki" src="static/img/Molchat.jpg" alt="Molchat">
+                                        <div class="card-body">
+                                        <p class="card-text">O meticuloso General Molchat, responsável pela maior campanha expansionista já vista em Drakonia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- O Prelúdio -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">O Prelúdio (2999-3010)</h3>
+
+                                <hr />
+
+
+                                <p> 
+                                    Em 500 anos os 8 guardiões nunca tiveram que agir tanto quanto nos últimos. Mas seu desaparecimento ao final de 2999 
+                                    era iminente e inevitável. Assim, os 10 anos que vieram após sua ida marcaram a expansão do crime organizado e terrorismo, 
+                                    e com eles eventos que mudariam toda a estrutura de Drakonia começaram a acontecer, <b>Migrações em Massa</b>, a <b>Calamidade de Quilborg</b>, 
+                                    <b>Criação das Primeiras Guildas</b>. 
+                                </p>
+
+                                <p> 
+                                    Conhecida pelos incontáveis conflitos históricos internos e externos, o <b>Império de Umbra</b> foi o que mais sofreu com ataques 
+                                    terroristas. Entretanto, o governo imperialista, que prometia repressão total, acabou se fortalecendo imensamente em função 
+                                    da união de seus reinos, um extremo justificava a existência do outro.
+                                </p>
+
+                                <p> 
+                                    Aproveitando o surgimento do inimigo externo em comum, o Comandante máximo do maior estado militarizado de toda a Drakonia, 
+                                    o <b>General Molchat</b>, só precisava da primeira fagulha para dar início a sua campanha expansionista.
+                                </p>
+
+                                <p> 
+                                    O <b>estopim</b> se deu com um conflito antigo, entre o poderoso clã mafioso <b>Izanagi</b> de Tenkoku e o clã <b>Dragão de Ferro</b> de Umbra, 
+                                    famosos pela sua habilidade xamânica de manipular seus espíritos em armaduras de combate. Com o assassinato do filho do líder
+                                    dos Dragões de Ferro, os territórios de Umbra se uniram e declararam guerra a Tenkoku.
+                                </p>
+
+                                <p> 
+                                    Por ser um conflito antigo, uma rivalidade histórica entre as duas nações e em função da instabilidade global gerada pela recente 
+                                    dissociação de <b>Quilborg entre Norte e Sul</b>, a princípio, nenhum partido foi tomado pelas outras grandes nações. Dessa forma, a 
+                                    força esmagadora de Umbra não encontrou resistência alguma para dominar completamente Tenkoku. 
+                                </p>
+
+                                <p> 
+                                    Para a surpresa das Nações, em um mês <b>toda a região havia sido anexada por Umbra</b>. O que parecia ser uma simples represália 
+                                    a uma rivalidade antiga, tinha passado profundamente do limite. A hegemonia de cada uma das nações já era reconhecida a séculos 
+                                    e pela estabilidade definida pelos guerreiros guardiões, o desaparecimento de uma delas implicava em um desequilíbrio perigoso, 
+                                    a possibilidade da <b>represália do Deus Enma</b> ao final do crepúsculo preocupava a todos.
+                                </p>
+
+                            </div>
+
+
+                            <!-- As Invasões -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">As Invasões (3011 - 3016)</h3>
+
+                                <hr />
+
+                                <p> 
+                                    Observando a discrepância absurda de poder de Umbra, e sua insubordinação acerca dos tratados e convenções, 
+                                    <b>Wu, Atlan e Quilborg do Norte</b> exigiram o recuo imediato das tropas em Tenkoku. 
+                                </p>
+
+                                <p> 
+                                    O General Molchat, não intimidado pela pressão global, firmando uma aliança com o líder da  <b>Aristocracia Xamãnica de Quilborg do Sul</b>
+                                     e as principais <b>Frentes Mercenárias de Zodresh</b>, acusou as demais Nações de desrespeitarem a cultura de Umbra, e conduzindo 
+                                     cegamente seu povo a guerra declarou a todos os povos: 
+                                </p>
+
+                                <p> 
+                                    <i>
+                                        “A força acima de tudo. Umbra não aceitará que sua cultura seja destruída em silêncio. 
+                                        Se nivelar aos covardes não é uma opção. Aqueles que não se submeterem serão purificados à força."
+                                    </i>
+                                </p>
+
+                                <p> 
+                                    Com um ataque coordenado, Molchat enviou suas tropas em direção às fronteiras de Quilborg do Norte, 
+                                    que ao deslocarem suas forças para o combate vindo da fronteira com Umbra foram surpreendidos pelos Xamãs de Quiborg do Sul 
+                                    que renderam facilmente 3 das 5 <b>Grandes Tribos dos Povos Livres</b> em um ataque coordenado às líderes desprotegidos. 
+                                </p>
+
+                                <p> 
+                                    As duas Grandes Tribos restantes, os <b>Leopardos Árticos</b> e <b>Presas de Marfim</b> se uniram na capital <b>Frihet</b> 
+                                    para conter o cerco que se formava. Montando uma unidade defensiva formidável. Vendo o posicionamento inimigo, 
+                                    Atlan e Wu começaram a agir, enviando tropas para pressionar os pontos de interesse e fronteiras Umbras.
+                                </p>
+
+                                <p> 
+                                    Os famosos <b>Monastérios de Wu</b> se organizaram em batalhões implacáveis, marchando incessantemente rumo ao norte para 
+                                    impedirem a queda de seus vizinhos de Quilborg do Norte. Mas isso já tinha sido previsto pelo General Mochat, que ignorando 
+                                    completamente o conflito direto, apenas aguardou a movimentação das tropas inimigas. Com a chegada dos monges a Frihet, a 
+                                    surpresa foi imediata, <b>não havia cerco algum</b>, muito menos exército Umbro.
+                                </p>
+
+                                <p> 
+                                    Molchat havia infiltrados anos atrás dezenas de <b>espiões Umbros</b> para Frihet. Instalados profundamente nas cadeias sociais os 
+                                    enviados disseminavam o caos dentro da cidade e estrategicamente, após roubarem as autenticações e <b>assinaturas mágicas 
+                                    de Quilborg</b>, eles sabotaram os equipamentos tecnomagicos de comunicação. Assim, Molchat apenas precisou manter a comunicação 
+                                    com Wu, se passando pela resistência em Quilborg e atrair o máximo de recursos para longe das plantações. Percebendo a articulação 
+                                    de Molchat, o líder das frotas monásticas ordenou o recuo imediato. Porém, já era tarde demais, o caminho de volta estava 
+                                    coberto pelas cinzas dos gigantescos campos agrícolas. As lágrimas rolavam pelos rostos dos milhões de monges fiéis a <b>Deusa Sitri</b>,
+                                    patronesse da Agricultura e duquesa da Justiça, eles desejavam vingança.
+                                </p>
+
+                                <p> 
+                                    Tomados pela fúria, o implacável batalhão monástico marchava em direção a <b>Thaijin</b>, a capital de sua nação. Mas o caminho era 
+                                    extenso, acostumados a longas trajetos e as declividades das regiões montanhosas não havia empecilhos em seu caminho, além das 
+                                    surpresas que Molchat havia preparado para os monges. 
+                                </p>
+                                <p> 
+                                    Cada um dos monastérios que podiam ser avistados estavam em chamas, a fúria dos monges era engolida por desespero a cada novo clarão 
+                                    visto à distância. Aos milhares o batalhão começava a se dispersar em desespero, vendo suas casas, famílias e mestres sucumbirem às chamas. 
+                                    Aqueles que restaram na marcha rumo a Thaijin não podiam acreditar ao ver <b>a própria capital arder em chamas</b>, a fortaleza inatingível cercada 
+                                    por rochedos e montanhas, no topo de Wu queimava como uma fogueira titânica.
+                                </p>
+                                <p> 
+                                    Se a imagem não havia enlouquecido os homens, os gritos de desespero de seus irmãos o fizeram. Muitos monges se mataram antes mesmo de 
+                                    chegar à capital, outros abandonaram tudo como os demais anteriormente. Mas apenas os poucos que entraram na capital realmente descobriram 
+                                    a verdade, <b>Thaijin estava intacta</b>, aquela visão infernal havia sido uma ilusão mágica poderosíssima criada pelo exército umbro, contudo 
+                                    as plantações e monastérios realmente haviam sido queimados pelo pináculo das forças inimigas: <b>Um Dragão Negro.</b>
+                                </p>
+                                <p> 
+                                    Extremamente enfraquecidas, restava a Wu e Quilborg do Norte apenas concentrarem o restante de suas forças e defenderem suas capitais. 
+                                    Assim, as regiões periféricas não conseguiram parar o avanço Umbro, que aproveitou o recuo inimigo para estabelecer diversos <b>postos avançados</b>. 
+                                    No primeiro ano, os cercos já haviam sido estabelecidos nas duas principais fortalezas de interesse de Quilborg do Norte e Wu. 
+                                    O objetivo das tropas de Umbra era <b>cortar os suprimentos</b> das Nações primeiro para enfraquecê-las e forçar conflitos desesperados. 
+                                    Assim, a grande parte das tropas e recursos Umbros iam para as investidas contra as <b>plantações restantes de Wu</b>, e a <b>extração de ferro de Quilborg</b>.
+                                </p>
+
+                                <p> 
+                                    A tática foi efetiva e em 2 anos, os principais pontos de interesse estavam a ponto de serem completamente dominados. 
+                                    Os ataques estratégicos minavam os recursos dos inimigos e minimizavam as perdas aliadas, era questão de tempo até duas das grandes capitais caírem.
+                                </p>
+
+                                <p> 
+                                    Com a superioridade estabelecida, chegava a hora de Umbra enfrentar a única nação que um dia pode se opor a sua força: <b>Atlan</b>. 
+                                    Enquanto Wu e Quilborg do Norte eram completamente suprimidas nos 2 anos posteriores, Atlan nada podia fazer além de se defender 
+                                    das <b>investidas que vinham de todos os lados</b>, pelo Sul com os Xamãs de Quilborg do Sul, pelo Oeste com as infiltrações dos Mercenários de Djinkoh 
+                                    ou pelo Norte com as investidas do Império Umbro.
+                                </p>
+
+                                <p> 
+                                    Havia muitos pontos de interesse para administrar e muitos inimigos para defender, nem mesmo os mais poderosos magos das renomadas <b>Academias de Magia</b> 
+                                    eram capazes de aguentar aquela pressão. E após 2 anos, com a queda iminente de seus aliados, Atlan começou a ceder. Primeiramente pelo Sudoeste, 
+                                    com a vantagem tecnomágica os Mercenários começaram a explorar a alta dependência de recursos da região semiárida que dividia Djinkoh e Atlan, 
+                                    e unindo forças com os Xamãs no sul foram anexando e saqueando as localidades.
+
+                                </p>
+
+                                <p> 
+                                    Se aproveitando da vulnerabilidade criada ao sul pelas invasões de Mercenários e Xamãs, os  <b>Orcs das Colinas de Wesnoth</b> movidos por um conflito antigo 
+                                    iniciaram investidas na fronteira, tanto contra Wesnoth em Atlan como contra Lonoth em Umbra. Levando os territórios mesmo em guerra a se unirem 
+                                    para derrotarem os Orcs.
+                                </p>
+
+                                <p>
+                                Entretanto, a polarização do conflito levou ao corte do fornecimento de água sagrada à Costa Florestal de Atlan. 
+                                Principal ponto de interesse de Molchat, sabendo que a região era responsável por concentrar as principais indústrias 
+                                de base de Drakonia. E, sem pensar duas vezes, o General concentrou todos os principais artifícios de seu poderio militar 
+                                em um ataque fulminante. 
+                                </p>
+
+                                
+                                <p>
+                                    O exército Atlaníade já sabia de sua vulnerabilidade e nesse ponto, as intenções e estratégias de Molchat eram claras. 
+                                    Então, observando a movimentação inimiga, também deslocaram tudo o que tinham para refrear o ataque inimigo. 
+                                    Estavam traçados os preparativos para a <b>Maior Batalha que Drakonia</b> já haviam visto, mesmo sem interferência dos 
+                                    incomparáveis Guerreiros Guardiões.
+                                </p>
+
+                            </div>
+
+                            <!-- A Dicatombe -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">A Dicatombe (3015)</h3>
+
+                                <hr />
+
+                                <p> 
+                                    <b>8 Milhões</b> dos mais fortes <b>Magos e Guerreiros de Atlan</b> das mais diversas raças e regiões, 
+                                    munidos das principais <b>forças tecnomagicas</b> já construídas; espadas, cajados e armaduras 
+                                    desenvolvidas exclusivamente para aquele momento, enfileiravam-se diante o lado sul da fronteira. 
+                                    No céu e na terra, incontáveis <b>bestas mágicas</b> domadas pelos guerreiros, de todas as formas e tamanhos imagináveis. 
+                                </p>
+
+                                <p> 
+                                    Do lado norte, marcando diante a colina, <b>15 Milhões de Soldados Umbros</b>, uma mancha escura ardente de homens 
+                                    uniformizados em armaduras negras com auras cintilantes que crepitavam das gemas o vermelho vivo da forja. Acima de suas cabeças, 
+                                    a fumaça escura que emanava de suas armaduras manchava o céu onde apenas uma besta mágica voava; o colossal <b>Dragão Negro</b> e  
+                                    montado sob ele o <b>General Verik Molchat</b>.
+                                </p>
+
+                                <p> 
+                                    Os dois lados já sabiam que aquela batalha era inevitável desde que a guerra havia sido declarada. O lado vencedor sairia como 
+                                    <b>Nação Hegemônica de Drakonia</b>, não havia truque ou plano que Molchat pudesse recorrer, era uma disputa de força absoluta, para governar 
+                                    Drakonia era essa a batalha que ele deveria ganhar.
+                                </p>
+
+                                <p> 
+                                    É dito que durante o encontro dos exércitos as ondas de força mágica eclodindo dos golpes e feitiços podiam ser vistos de toda a Drakonia. 
+                                    A concentração de poder em um só lugar era tamanha que foram registradas <b>alterações irreversíveis nos campos magnéticos do planeta</b>, 
+                                    <b>efeitos magmáticos e geológicos</b> adormecidos por milênios recomeçaram depois da batalha, <b>fauna e flora</b> sofreram alterações que ainda 
+                                    vem sendo mapeadas no presente.
+                                </p>
+
+                                <p> 
+                                    Em 20 de agosto de 3015, após <b>12 dias de batalha sem fim</b>, no que hoje é conhecido como a <b>Dicatombe</b>, com nada mais que um quinto de seu exército de pé, 
+                                    <b>o General Molchat saiu vitorioso</b>, marchando em direção à capital de Atlan, Varean. Assim foi montado o último cerco, em pouco tempo o Império de Umbra 
+                                    seria soberano por toda a Drakonia.
+                                </p>
+
+                                <p> 
+                                    O continente inteiro agora estava a um passo de ser dominado, convencido de que não havia mais quem pudesse impedi-lo, a ganância de Molchat 
+                                    começou a consumi-lo. Tendo plena convicção de que os cercos nas capitais seriam o suficiente para sua dominação, o General começou a deslocar 
+                                    recursos para <b>A Invasão do Arquipélago de Nenphis</b>.
+                                </p>
+                                <p>
+                                    No ano de 3016, meio ano após a Dicatombe, <b>toda a costa florestal de Atlan havia sido anexada por Umbra</b>. 
+                                    Assim, as primeiras embarcações de Umbra deixaram os portos da <b>Serpentina</b> em direção às ilhas de Nenphis.
+                                </p>
+                                <p>
+                                    A pretensão de Molchat era que os selvagens das ilhas desconhecidas não tivessem a mínima chance contra o exército de Umbra. 
+                                    Se nem a maior das Nações conseguiu segurar suas investidas, um povo que sequer tinha visto as amplificações tecnomagicas e a 
+                                    estratégias de guerra, seria um <b>alvo fácil</b>.
+                                </p>
+                                <p>
+                                    Ledo engano, antes mesmo de chegar às primeiras ilhas a fauna marinha parecia recuar para avisar os nativos. 
+                                    A presença de rochedos e recifes cercando as principais áreas ilhas do Arquipélago <b>retardaram muito o avanço de Umbra</b>. 
+                                    Os grandes navios de combate não eram capazes de operar nos estreitos pontos de acesso. 
+                                </p>
+                                <p>
+                                    Assim os exércitos de Umbra começaram a se organizar nas <b>pequenas ilhas</b>, dizimando tudo em sua frente e construindo em seu 
+                                    lugar postos avançados, preparados para receber dia após dia, cada vez mais soldados. O desafio de domar a grande <b>Ilha 
+                                    Desconhecida</b> tomou conta de Molchat, a resistência integrada dos habitantes, animais e plantas do local, inflavam o instinto 
+                                    compulsório do general de tomar à força uma <b>oposição tão sublime</b>.
+                                </p>
+
+                                    
+                            </div>
+
+                            <!-- A reviravolta -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">A reviravolta (3016 - 3022)</h3>
+
+                                <hr />
+
+                                <p> 
+                                    A ganância de Molchat tomava conta de suas ações, e cada vez mais ele <b>deslocava recursos importantes</b> para alvejar as ilhas virgens.
+                                     No final de 3016, Molchat havia conseguido anexar um número considerável de homens ao seu exército, uma vez que <b>12 Milhões 
+                                     de soldados foram perdidos na Dicatombe</b>. Se aproveitando de <b>prisioneiros de guerra chantageados, mercenários, 
+                                     piratas da Serpentina e oportunistas</b>, o General não se importava com quem compunha mais suas tropas, ele faria de tudo para 
+                                     provar que dominava tudo e todos. 
+                                </p>
+
+                                <p> 
+                                    Começava o ano de 3017, com cerca de 10 Milhões de “Soldados Umbros”, posicionados por toda a <b>Costa Leste de Drakonia e 
+                                    suas pequenas ilhas</b>. A investida contra Nenphis tomava um curso lento mas progressivamente assertivo. O General Umbro 
+                                    tinha como objetivo cercar completamente o imenso arquipélago e conforme explorava seu novo continente ir minando os 
+                                    recursos dos nativos.
+                                </p>
+
+                                <p> 
+                                    Molchat era meticuloso, seu perfeccionismo e extenso planejamento de contramedidas tinham lhe garantido uma hegemonia 
+                                    absoluta em Drakonia. <b>Ele havia dominado todas as nações pois sabia tudo sobre elas</b>, mas aquilo era novo, incendiava 
+                                    sua curiosidade, ele não podia esperar para colocar as mãos em seu novo pedaço de terra.
+                                </p>
+
+                                <p> 
+                                    De <b>3017 até 3019</b>, os planos do General avançavam, cada nova ilha era uma grande conquista para ele e sua curiosidade mórbida. 
+                                    Sua necessidade de exploração tornou as coisas mais lentas e tirou a objetividade de suas ordens, ele mesmo não conseguia 
+                                    perceber que <b>seus ataques não eram nem de longe tão eficientes quanto no continente</b>. 
+                                </p>
+
+                                <p> 
+                                    Cada nova invasão despertava uma <b>resposta imunológica conjunta da fauna e flora</b> local, onde os nativos lideravam contra-ataques coordenados poderosos. 
+                                    E mesmo sem forças para frear completamente, deixavam <b>baixas significativas</b> no exército umbro todas as vezes.
+                                </p>
+
+                                <p> 
+                                    Em outubro de 3019, o plano de Molchat tinha chegado ao ponto que ele esperava. Cada uma das <b>centenas de ilhas menores</b> do Arquipélago 
+                                    haviam sido tomadas. A <b>Ilha Central</b>, uma área semi-continental de terra, apenas aguardava o golpe final, <i>“Que mistérios aguardavam no coração 
+                                    daquele território imaculado?”</i> Se perguntava Molchat, em seus aposentos no <b>Leviatã</b>, o maior navio de guerra já construído em Drakonia.
+                                </p>
+                                <p>
+                                    Ignorando o fato de que, do seu exército original restavam apenas milhares de homens e que em sua grande maioria
+                                     estava <b>cercado de mercenários e piratas</b>, Molchat deu sorrindo a ordem mais ignorante de sua vida: 
+                                     <i>“Que comece a invasão no coração de Nenphis!”</i>
+                                </p>
+                                <p>
+                                    Ancorado a uma distância segura da costa, o General, observou por um ano inteiro cada uma de suas investidas ser 
+                                    massacrada pelos <b>Druidas Nativos</b>. Por diversas vezes os navios nem chegavam a ancorar, eram <b>destroçados no mar mesmo</b>, 
+                                    quando desciam a praia os soldados tinham minutos antes de serem desmembrados pela <b>fauna nenphítica</b>.
+                                </p>
+                                <p>
+                                    Sua esperança, residia nas <b>Aeronaves</b>, uma tecnologia nova que permitiu táticas ainda mais arrojadas.
+                                    Contudo, nem mesmo seus mais brilhantes planejamentos obtiveram sucesso. Os <b>bombardeios e reposicionamentos rápidos</b>
+                                    eram rapidamente identificados e seus padrões facilmente aprendidos pelos druidas, que com ajuda das aves locais
+                                    contruíram uma <b>defesa antiaérea</b> impenetrável.
+                        
+                                </p>
+                                <p>
+                                    Os <b>recursos começaram a se esvair</b>, era custoso trazer comida de Drakonia até o mar para todos os soldados, 
+                                    aos poucos a fome e as derrotas foram tomando conta da moral. <b>Insubordinações e revoltas</b> se tornaram cada vez mais comuns, 
+                                    mercenários e piratas vendo seus pagamentos atrasarem começaram a cobrar o General.
+                                </p>
+
+                                <p>
+                                    As cadeias de suprimento até o mar, sugava sem parar da distribuição para os soldados que mantinham os <b>cercos nas grandes 
+                                    fortalezas em Drakonia</b>. As organizações de <b>Guildas no Prelúdio à guerra</b>, aliadas às resistências 
+                                    de Wu, Atlan e Quilborg do Norte, unindo párias de todas legiões, lideram a reconquista, quebrando os cercos. 
+                                </p>
+                                <p>
+                                    <b>Varean</b>, com apoio das <b>Garras da Tempestade</b> foi a primeira a quebrar o cerco de Umbra e começar a 
+                                    reconquistar as terras de Atlan. Quando a notícia chegou até o <b>General Umbro</b>, apenas uma risada distorcida e 
+                                    gritos de loucura podiam ser escutados do Leviatã, o exército não tinha comida a 3 dias, às revoltas praticamente incontroláveis, <b>era o fim…</b>
+                                </p>
+                                <p>
+                                    Mas não, recuperado de seu surto de loucura, seus delírios de grandeza, Molchat nunca desistiria tão facilmente. 
+                                    Ele iria tomar Nenphis nem que fosse a última coisa que fizesse. Subindo ao convés do Leviatã e discursando para 
+                                    todos os navios de sua frota, ele disse:
+                                </p>
+                                <p>
+                                    <i>“A força acima de tudo. Todos que um dia beberam da fonte inesgotável de poder incandescente que 
+                                    jorra de Umbra, sabem da força que essa forja produz, que nós produzimos! Hoje iremos purificar 
+                                    os últimos que se opõem à nossa força esmagadora! "</i>
+                                </p>
+                                <p>
+                                    Mas diferente dos outros discursos, não houveram gritos empolgados de apoio ao General, <b>o silêncio era insurdecedor</b>. 
+                                    Levantando as velas, soltando as âncoras e posicionando o leme, em silêncio. Mudos como em uma marcha fúnebre, acenderam 
+                                    as grandes gemas que propulsionam a enorme estrutura tecnomagica do Leviatã para sua <b>última batalha</b>.
+                                </p>
+                                <p>
+                                    Mas diferente dos outros discursos, não houveram gritos empolgados de apoio ao General, <b>o silêncio era insurdecedor</b>. 
+                                    Levantando as velas, soltando as âncoras e posicionando o leme, em silêncio. Mudos como em uma marcha fúnebre, acenderam 
+                                    as grandes gemas que propulsionam a enorme estrutura tecnomagica do Leviatã para sua <b>última batalha</b>.
+                                </p>
+                                <p>
+                                    O enorme navio liderava a frente, enquanto os guerreiros mais poderosos afastavam e abatiam as diversas criaturas 
+                                    que se colocavam entre a costa e a embarcação. Em um solavanco repentino todos os homens no convés foram jogados 
+                                    para a frente, alguns direto na água, tamanha a força do interrompimento brusco do navio. As grandes gemas se 
+                                    apagaram de repente, com elas todo o sistema de iluminação do navio deu lugar a uma escuridão sem fim. 
+                                </p>
+                                <p>    
+                                    Era possível escutar apenas os sons das mais horrendas criaturas se chocando contra o casco do navio, se debatendo sob as águas 
+                                    à espera dos primeiros desertores. Mas, o silêncio inquietante foi substituído rapidamente pelos gritos de dor e agonia 
+                                    dos marujos e soldados. Pequenas velas em lampiões passaram a iluminar o convés revelando ao longe as dezenas de corpos 
+                                    e sob eles seus assassinos risonhos, com suas espadas e baionetas ensanguentadas, olhando diretamente para Molchat.
+                                </p>
+                                <p>    
+                                    Segurando em sua mão esquerda as cabeças de um dos mais fortes soldados Umbros que era responsável pela segurança pessoal 
+                                    do General Molchat, o <b>Capitão Don Glank</b>, um influente pirata da Serpentina integrado as tropas Umbras, surgiu da penumbra, iluminando o caminho com 
+                                    sua espada flamejante. Jogando a cabeça decepada nos pés de Molchat ele diz: <i>“Você sabe quem me deu esse presentinho?”</i> e 
+                                    revelando atrás de Glank a silhueta conhecida de seu jovem aprendiz e maior expoente das forças Umbras <b>O Cavaleiro Negro</b>. 
+                                </p>
+                                <p>    
+                                    O General não se surpreendia com a traição do pirata, mas seu próprio aprendiz, era demais. Nenhuma palavra conseguia sair 
+                                    da boca de Molchat que quase engasgava com sua risada, chorava loucamente pela força que seus músculos da face contraiam. 
+                                    Glank contagiado pela risada insana, ou por puro sadismo começou a rir de Molchat e dizendo: </i>“É como diz o velho ditado da 
+                                    Serpentina, quem não paga em ouro, paga em sangue! HAHAHA”</i>. Don Glank ergue sua espada e em um único movimento decapita o General.
+                                </p>
+                                <p>    
+                                    Em 3020, com a <b>morte de Terik Molchat</b>, e de seus últimos verdadeiros soldados em alto mar, as frentes avançadas de Umbra 
+                                    perdem sua principal coordenação e são tomadas de volta por Atlan, Wu e Quilborg do Norte, <b>retomando integralmente seus 
+                                    territórios</b> durante os 3 próximos anos, <b> oficializando o final da Guerra em 3022</b>.
+                                </p>
+                                <p>    
+                                    Os poucos <b>soldados do império de Umbra</b> restante, são aprisionados e sentenciados por seus crimes de guerra. 
+                                    As frentes <b>mercenárias de Djinnkoh</b> deixam as regiões antes ocupadas, se exilando em meio ao deserto. 
+                                    As <b>forças Xamãnicas de Quilborg do Sul</b>, lutaram para manter suas terras conquistadas, 
+                                    mas sem apoio Umbro não foram capazes de derrotar as forças Atlaníades, sendo mortos ou aprisionados em combate.
+                                </p>
+
+                               
+
+
+                                    
+                            </div>
+                           
+
+
+
+                            <!-- Galeria -->
+                            <div class="col-md-10 text-wrap" style="text-align: justify;">
+
+
+                                <h3  id="">Galeria</h3>
+
+                                </hr>
+
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-block w-100" src="static/img/producao_drakonium.jpeg" alt="First slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>A Produção de Drakonium</h5>
+                                            <p>Primeira indústria de refinamento de Drakonium inalgurada em Kaiser, capital de Umbra.</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/exercito_umbro.jpeg" alt="Second slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>O Exército Umbro</h5>
+                                            <p>Liderança do Cavaleiro Negro, momentos após o General Molchat declarar a Guerra.</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/invasoes_quilborg.jpeg" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Marcha a Frihet</h5>
+                                            <p>Movimentações do imperio umbro após os ataques as tribos livres.</p>
+                                        </div>
+                                      </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/invasoes_quilborgs.jpeg" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>As Invasões</h5>
+                                            <p>Destruição das tribos de Quilborg do Norte.</p>
+                                        </div>
+                                      </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/Dicatombe.jpeg" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Resistência Atlaniáde</h5>
+                                            <p>O início de uma Grande Batalha.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" src="static/img/Runic_Wars.jpg" alt="Third slide" width="1200" height="700">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>O impacto da Dicatombe</h5>
+                                        <p>O campo de batalha e a destruição causada pela batalha.</p>
+                                    </div>
+                                  </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+                             </div>
+
+
+
+
+                        </div>
+                    </div>
+              </wiki-page>
+
+
+              <!-- Rodapé -->
+              <footer>
+                <div id="contact-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <h3 class="footer-title">Fale conosco</h3>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-tile">Ligue para:</span> (31) 4002-8922</p>
+                        <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-tile">Envie um email:</span> luiz.w8w@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-tile">Venha tomar um café:</span> Rua dos Bobos - nº 0</p>
+                        </div>
+                        <div class="col-md-6" id="msg-box">
+                        <p>Deixe uma mensagem para que o Clodoaldo nos entregue:</p>
+
+                        <div class="clodoaldo">
+                            <img src="/static/img/pigeon.jpg" alt="Clodoaldo, O pombo" style="width:175px;height:175px;">
+                        </div>
+                        </div>
+                        <div class="col-md-6" id="contact-form">
+                        <form>
+                            <input type="text" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                            <input type="submit" class="main-btn" value="Voa Mlk!">
+                        </form>
+                        </div>
+                    </div>
+
+                </div>
+                <img src="static/img/DrakoniaLogoPNG.png" alt="Logo, Logo" style="width:250px;height:250px;">
+                </div>
+                <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://www.youtube.com/watch?v=hAx4Lql_-VI" target="_blank">Blind Rooster</a> &copy; 2024</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+
+
+
+  <!-- Scripts do projeto -->
+    <script src="static/scripts.js"></script>
+    </body>
 </html>
