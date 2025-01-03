@@ -1,10 +1,508 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link href="static/wiki.css" rel="stylesheet" >
+
+        <title>DRAKONIA WIKI - OS DEUSES</title>
+
+          <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/47814a68c0.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar -->
+        <script src="static/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <body >
+        <header >
+            <div class = "container" id="nav-container">
+                <nav class = "navbar navbar-expand-lg fixed-top" id="nav">
+                    <a href="/" class="navbar-brand">
+                        <img src="static/img/DrakoniaLogoPNG.png" alt="Drakonia LOGO" style="width:90px;height:90px;"> DRAKONIA WIKI
+                    </a>
+                    <button id = "---" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button >
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a href="/" class="nav-item nav-link" id="home-menu">Home</a>
+                            <a href="/#mainSlider" class="nav-item nav-link" id="arcs-menu">Arcos</a>
+                            <a href="/#characters" class="nav-item nav-link" id="characters-menu">Personagens</a>
+                            <a href="/#time-line" class="nav-item nav-link" id="one-shots-menu">One-Shots</a>
+                            <a href="/#contact-area" class="nav-item nav-link" id="contact-menu">Contato</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <nav>
+            <wiki-nav></wiki-nav>
+        </nav>
+        <!-- Layout Wiki Base -->
+
+        <main class="main-page">
+
+            <wiki-page id="wiki-page" >
+                <div id="about-area">
+                    <div class="row">
+
+                            <!-- Introdução do Tema -->
+                            <div class="col-md-6 text-wrap" style="text-align: justify;">
+
+                                <h2  id="Sobre-o-RPG">Os Deuses</h3>
+
+                                <hr />
+
+                                <p>
+                                    Os deuses representam forças primordiais e arquétipos que moldam o mundo, sendo pilares da crença, cultura e poder nas nações que os veneram. Cada divindade reflete valores únicos, inspirando seguidores de diferentes profissões e alinhamentos. De Ysis, a sedutora dourada, a Polarys, o idealista inabalável, essas entidades têm um papel central nos destinos dos mortais, influenciando suas vidas com dogmas, bênçãos e provações.
+                                </p>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div id="card-wrap">
+                                    <div id="card" class="card" style="width: 18rem;">
+                                        <img class="img-fluid wiki" src="static/img/Draconic_God.jpg" alt="Draconic God">
+                                        <div class="card-body">
+                                        <p class="card-text">Pintura antiga de um Deus Dragão desconhecido.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ysis -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Ysis</h3>
+
+                                <hr />
+
+                                <p>
+                                    <I>A Essência da Avareza. Dama da luxúria e vaidade, Ysis é conhecida como "A Sedutora Dourada que roubou o Sol" e "A Evasiva Dourada"</I>.
+                                </p>
+                                <ul>
+                                    <li><b>Símbolo:</b> Taça cheia de moedas e gemas</li>
+                                    <li><b>Nação Abençoada:</b> Djinnkoh</li>
+                                    <li><b>Tendência:</b> Caótico/Neutro</li>
+                                    <li><b>Portfólio:</b> Tesouros, Riqueza, Vaidade, Avareza, Luxúria</li>
+                                    <li><b>Adoradores:</b>Mercenários, Bardos, Ladinos, Feiticeiros, Nobres, Burgueses, Soberanos, Magos, Guerreiros</li>
+                                    <li><b>Domínios:</b> Encanto, Liberação, Sorte, Nobreza, Caos</li>
+                                    <li><b>Arma:</b> Espada Longa</li>
+                                    <li><b>Outros Nomes:</b> Nil’rin entre as fadas e seres silvestres, “A Beleza e o Ouro”</li>
+                                </ul>
+                                <p>
+                                    <b>Dogma:</b> Ysis prega a seus adoradores que a autorrealização é o ponto máximo da vida. Os mortais devem aproveitá-la e para isso buscar as coisas que mais lhe trazem prazer.
+                                </p>
+
+                                <p>
+                                    Patrona das riquezas, valores e tesouros, ela exige de seus adoradores tributos em troca de beleza, riqueza e poder. Seu sussurro sensual move seus sacerdotes em busca de um acúmulo de tesouros que acaba invariavelmente por lhes controlar.
+                                </p>
+                                <p>
+                                    A beleza também é muito importante na doutrina da deusa, sendo considerada o fator que separa os seres superiores dos inferiores.
+                                </p>
+                                <p>
+                                    Os que seguem o caminho de Ysis se tornam seus eternos servidores, em troca de grandes recompensas.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Sitri -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Sitri</h3>
+
+                                <hr />
+
+                                <p>
+                                    <I>A Duquesa da Justiça. Patronesse da igualdade e do equilíbrio, Sitri também é conhecida como "A Dama da Retribuição" e "A Justiça Divina".</I>
+                                </p>
+                                <ul>
+                                    <li><b>Símbolo:</b> Corrente ou anel com uma gota de sangue</li>
+                                    <li><b>Nação Abençoada:</b> Wu</li>
+                                    <li><b>Tendência:</b> Leal/Neutra</li>
+                                    <li><b>Portfólio:</b> Equilíbrio, Retribuição, Igualdade, Sustento, Agricultura</li>
+                                    <li><b>Adoradores:</b> Monges, Padeiros, Agricultores, Paladinos, Guerreiros, Ladinos, Juízes, Nobres, Autoridades</li>
+                                    <li><b>Domínios:</b> Comunidade, Cura, Bem, Fúria, Força, Proteção, Mártir, Lei</li>
+                                    <li><b>Arma:</b> Sabre</li>
+                                    <li><b>Outros Nomes:</b> A Punidora</li>
+                                </ul>
+                                <p>
+                                    <b>Dogma:</b> Justiça, merecimento, consequência, ou simplesmente, Karma. Essa é a matriz do dogma de Sitri.
+                                </p>
+
+                                <p>
+                                    Segundo seus ensinamentos, o bom deve ser pago com o bom e o mal com mal. Todos têm o direito de comer e se satisfazer, desde o mais correto e merecedor dos monges ao mais vil e maligno tirano, pois todos sucumbem igualmente à fome. Mas toda a ação tem uma reação, tudo que se faz vai gerar uma consequência, e essas consequências vão irremediavelmente voltar para a pessoa que as fez.
+                                </p>
+                                <p>
+                                    Para ela, a vingança é algo nobre, não uma questão de brutalidade como alguns deuses bondosos pensam, ou uma questão de princípios e honra como muitos povos acreditam ser. É apenas algo natural, sangue se paga com sangue, danos com danos e morte com morte, ou pelo menos que tal ação seja paga sempre com algo da mesma intensidade. Isso faz com que Sitri seja erroneamente temida como uma deusa vingativa, brutal e severa. Mas Sitri ensina muito mais que isso. Sitri presa a algo conhecido simplesmente de equilíbrio. E a vingança é meramente um dos caminhos, se não o mais rápido e direto para o equilíbrio.                                </p>
+                                <p>
+                                    A retribuição também faz parte do equilíbrio e aqueles que aprendem sobre esse aspecto passam a compreendê-la mais facilmente. Não apenas de punição se faz o equilíbrio, mas também de retribuição. Bons feitos muitas vezes são ignorados, e passam sem serem vistos, e para Sitri isso é tão errado como um grande criminoso sair impune.
+                                </p>
+                                <p>
+                                    Alguns povoados mais estritamente devotos a deusa a veem como uma matriarca generosa que os recompensa por seus bons feitos e pune os maus quando necessário. Seus devotos mais harmoniosos acreditam fervorosamente no ditado "faça para o próximo o que quer que façam para você”. 
+                                </p>
+                            </div>
+
+                            <!-- Nione -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Nione</h3>
+
+                                <hr />
+                                <p>
+                                    <b>A Mãe Natureza.</b> Senhora da fauna e flora, Nione é a guardiã do ciclo das estações e da vida natural.
+                                </p>
+                                <ul>
+                                    <li><b>Símbolo:</b> Círculo dividido em quatro partes, representando as estações</li>
+                                    <li><b>Nação Abençoada:</b> Nenphis</li>
+                                    <li><b>Tendência:</b> Neutra</li>
+                                    <li><b>Portfólio:</b> 4 Estações, Fenômenos Naturais, Fauna, Flora, Ciclo</li>
+                                    <li><b>Adoradores:</b> Druidas, Rangers, Bárbaros, Seres silvestres e aldeões</li>
+                                    <li><b>Domínios:</b> Animal, Planta, Clima, Sol, Terra</li>
+                                    <li><b>Arma:</b> Bordão</li>
+                                    <li><b>Outros Nomes:</b> Mãe Terra, Mãe da Lua, Tari'n Allis entre os elfos afastados</li>
+                                </ul>
+                                <p>
+                                    <b>Dogma:</b> Divindade absoluta da natureza, Nione é amplamente venerada por druidas, que podem muitas vezes ouvir sua voz nos riachos, no vento, e farfalhar das copas das árvores.
+                                </p>
+                                <p>
+                                    Nione oferece aos mortais a natureza para ser aproveitada, respeitada e nunca subestimada e ensina seus seguidores a importância que ela tem nas suas vidas, direta ou indiretamente.
+                                </p>
+                                <p>
+                                    Ela ressalta o fato de tudo fazer parte de um ciclo, como as estações e as cadeias alimentares. Seus ensinamentos pregam para não temer a morte, pois ela simplesmente é parte da natureza, e a essência não é perdida, apenas volta para a terra para reiniciar o ciclo.
+
+                                </p>
+                                <p>
+                                    Nione não tolera abusos ou desrespeito e espera o mesmo de seus sacerdotes, os lembrando que quando necessário deve-se mostrar do que a natureza é capaz, seja por bem ou por mal. Hostilidade sem fundamento contra a natureza é algo que não pode ser ignorado.
+                                </p>
+                                    
+                            </div>
+
+                            
+                            <!-- Eon -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Eon</h3>
+
+                                <hr />
+                                <p>
+                                    <I>Protetor urbano e das populações. O Arauto Acadêmico, conhecido como "A cantiga antiga que acordou o mundo".</I>
+                                </p>
+                                <ul>
+                                    <li><b>Símbolo:</b> Escudo com Harpa escrutada e livro fechado</li>
+                                    <li><b>Nação Abençoada:</b> Atlan</li>
+                                    <li><b>Tendência:</b> Leal/Neutro</li>
+                                    <li><b>Portfólio:</b> Música, Arte, Inspiração, Educação, Magia, Proteção e Vigilância</li>
+                                    <li><b>Adoradores:</b> Sacerdotes, Bardos, Rangers, Druidas, Feiticeiros, Ladinos, Elfos, Artistas, Filósofos, Guerreiros, Paladinos, Acadêmicos, Monges</li>
+                                    <li><b>Domínios:</b> Liberação, Viagem, Bem, Proteção, Comunidade, Glória, Lei, Arcano, Conhecimento, Linguagem, Proteção</li>
+                                    <li><b>Arma:</b> Escudo</li>
+                                    <li><b>Outros Nomes:</b> Baromeus entre os anões, Osraal, O Nascido da Musica, Rivel para os halflings, O Arcano da torre de Marfim</li>
+                                </ul>
+                                <p>
+                                    <b>Dogma:</b> A música, os pensamentos, são para Eon os instrumentos da sinfonia da vida, para ele todos os seres inteligentes devem ter um mínimo de instrução necessária, além de proteção, segurança e prevenção.
+                                </p>
+                                <p>
+                                    Ele encoraja seus seguidores a seguirem caminho da arte e da música, vendo o mundo como seu palco. Seus ensinamentos fazem seus seguidores verem o mundo de uma perspectiva diferente, onde tudo pode virar um grande e épico episódio da vida. 
+
+                                </p>
+                                <p>
+                                    Mas para Eon, viver em ignorância é simplesmente não viver ou perder de ver a vida com os olhos abertos, segundo sua filosofia. Ele instrui seus clérigos a espalhar o conhecimento da literatura e ciências pelo mundo e ressalta a importância que os livros têm, sendo os receptáculos do conhecimento.
+                                </p>
+                                <p>
+                                    Lares, abrigos, fortalezas são bastiões onde os mortais podem achar abrigo, em meio a todas as hostilidades do mundo à sua volta. Além da proteção, a prevenção é igualmente importante para o Deus Urbano.
+                                </p>
+                                
+                                    
+                            </div>
+                           
+                            <!-- Enma -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Enma</h3>
+
+                                <hr />
+                                <p>
+                                    <I>Patrono da medicina e alquimia, O protetor dos navegantes, O Indominável mestre das águas. A Nébula ártica, A calmaria antes da tempestade.</I>
+                                </p>
+                                <ul>
+                                    <li><b>Símbolo:</b> Frasco com uma onda</li>
+                                    <li><b>Nação Abençoada:</b> Tenkoku</li>
+                                    <li><b>Tendência:</b> Neutro</li>
+                                    <li><b>Portfólio:</b> Medicina, Alquimia, Navegação, Mudança, Água</li>
+                                    <li><b>Adoradores:</b> Navegadores, Pescadores, Curandeiros, Magos, Alquimistas, Exploradores, Druidas</li>
+                                    <li><b>Domínios:</b> Água, Cura, Clima, Destruição, Liberdade(Liberação)</li>
+                                    <li><b>Arma:</b> Cimitarra</li>
+                                    <li><b>Outros Nomes:</b> Irmão das ondas, Nessala em variadas regiões, ou até nas mesmas. Não é incomum a mesma pessoa alterar o nome</li>
+                                </ul>
+                                <p>
+                                    <b>Dogma:</b> Enma distribui igualmente a calmaria das águas e a fúria dos mares, sendo assim muito respeitada pelos seus seguidores. Seus ensinamentos dizem que mesmo o que é mortalmente perigoso também pode ser benéfico de alguma forma e vice-versa: A água e as criaturas que nela vivem são elementos vitais para os mortais, mas muitos mortais sucumbem igualmente para os mesmos.
+                                </p>
+                                <p>
+                                    Tudo está se alterando e mudando a todo tempo de uma forma para a outra de benéfico ao nocivo. Por essas razões, ele admira alquimistas por sua ousadia de manipular os elementos, seja para fins benéficos ou não, desde que continuem a manipular a alternância da essência das coisas.
+                                </p>
+                                <p>
+                                    Ele lembra, no entanto, que embora tudo possa ser igualmente uma salvação ou uma ameaça, que a vida deve ser preservada acima de tudo, e não simplesmente perdida para um mero acaso. E para esses fins ele empresta seus poderes generosamente, ajudando seus sacerdotes a salvar vidas que infelizmente se colocaram em risco de serem perdidas às incontáveis hostilidades do mundo.
+                                </p>
+                                <p>
+                                    Uma vida sempre deve ser salva quando possível, ele lembra.
+                                </p>
+                                
+                                    
+                            </div>
+
+                            <!-- Zaldor -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Zaldor</h3>
+
+                                <hr />
+                                <p>
+                                    <I>Senhor do Fogo, Guerreiro dos Deuses, Mestre de todos os ferreiros. O Pesado braço vermelho da forja, O Fogo que purifica.</I>
+                                </p>
+                                <ul>
+                                    <li><b>Símbolo:</b> Bigorna em Chamas</li>
+                                    <li><b>Nação Abençoada:</b> Umbra</li>
+                                    <li><b>Tendência:</b> Caótico/Neutro</li>
+                                    <li><b>Portfólio:</b> Forja, Armas, Fogo, Combate, Guerreiros, Purificação</li>
+                                    <li><b>Adoradores:</b> Ferreiros, Guerreiros, Gladiadores, Feiticeiros, Piromantes, Bárbaros, Anões, Artesãos</li>
+                                    <li><b>Domínios:</b> Fogo, Artífice, Guerra, Gloria, Lei</li>
+                                    <li><b>Arma:</b> Martelo de Guerra</li>
+                                    <li><b>Outros Nomes:</b> O Grande Forjador, O Ferreiro Vermelho, O Martelo do Vulcão</li>
+                                </ul>
+                                <p>
+                                    <b>Dogma:</b> A arte do combate é milenar. E milenar é também o domínio de Zaldor, o deus do fogo, forja e armamentos. Aos seus olhos armas são mais do que pedaços de metal e madeira que se tentam introduzir nos corpos dos oponentes, e sim, ferramentas de combate, cada qual com suas formas específicas e métodos adequados de se utilizar.
+                                </p>
+                                <p>
+                                    Zaldor ensina que armas de verdade devem ser empunhadas por quem as merece usar, pessoas dignas do aço que empunham, capazes de manobrá-las corretamente, ao contrário de simplesmente balançá-las como um pedaço de madeira na esperança de atingir alguém.                                </p>
+                                <p>
+                                    Fabricar uma arma é algo sério que deve ser visto com cuidado. É uma coisa que tira vidas, e embora Zaldor aprecie a maestria do combate e a efetividade das armas, ele não encoraja a matança ou o genocídio descontrolado, e ensina a seus seguidores a evitar deixar que a lâmina os controlem, e sim, a controlarem a lâmina.
+                                </p>
+                                <p>
+                                    Zaldor aprecia muito a arte do combate e ocasionalmente seleciona guerreiros que considera dignos, os guiando ou até presenteando com armas excelentes.
+                                </p>
+                                <p>
+                                    Para Zaldor o fogo e sua essência é igualmente importante para o mundo assim como o é importante para manter a forja ativa. Ele instrui seus seguidores a respeitarem o potencial útil e destrutivo do fogo, tanto para atividades do dia a dia como para combate. O uso descontrolado do fogo apenas desencadeia o caos e a destruição, coisas que Zaldor abomina.
+                                </p>
+                                
+             
+                            </div>
+
+                            <!-- Yellena -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Yellena</h3>
+
+                                <hr />
+                                <p>
+                                    <I>Senhora da Terra, Guardiã das Montanhas mais altas e cavernas mais profundas, A Reparadora e Redendora.</I>
+                                </p>
+                                <ul>
+                                    <li><b>Símbolo:</b> Picaretas Cruzadas atrás de uma Gema iluminada por Velas</li>
+                                    <li><b>Nação Abençoada:</b> Quilborg do Norte</li>
+                                    <li><b>Tendência:</b> Caótica/Boa</li>
+                                    <li><b>Portfólio:</b> Minérios, Artífices, Montanhas e Cavernas, Renovação, Terra</li>
+                                    <li><b>Adoradores:</b> Mineiros, Anões, Gnomos, Guerreiros, Druidas, Rangers, Monges</li>
+                                    <li><b>Domínios:</b> Seio da Terra, Artífice, Proteção, Caos, Bem</li>
+                                    <li><b>Arma:</b> Picareta</li>
+                                    <li><b>Outros Nomes:</b> Olephaz (Entre os Anões e Gnomos)</li>
+                                </ul>
+                                <p>
+                                    <b>Dogma:</b> Yellena ensina a seus seguidores a respeitar a própria terra que pisam, pois ela é o que lhes sustenta no mundo. Além disso, a terra é mais do que apenas o "chão". Ela é uma miscelânea de substâncias, cada uma invariavelmente importante para a vida, e por inúmeros motivos que os mortais as extraem.
+                                </p>
+                                <p>
+                                    Aos olhos de muitos, a mineração é uma espécie de parasitismo, uma brutal forma de extrair as riquezas contidas nas profundezas do mundo. Mas para Yellena, é uma forma de receber os presentes que ela gera aos seus filhos.
+                                <p>
+                                    Yellena conta a seus seguidores que tudo segue um ciclo, o que sai da terra invariavelmente retorna à terra, e muitas coisas que se geram fora dela acabam indo para ela e se transformando novamente nas riquezas que um dia serão removidas novamente. Com isso, Yellena incentiva esse tipo de exploração e descoberta, pois sempre haverá mais, em algum lugar, para ser encontrado. Tal é a vida, ela lembra.                                </p>
+                                <p>
+                                    Yellena provê em comunhão com a terra a união dos povos. Guiados pelo respeito ancestral, ela acolhe os descartados e oferece redenção e integração.
+                                </p>
+                                
+                                
+             
+                            </div>
+
+
+                            <!-- Polarys -->
+                            <div  class="col-md-10 text-wrap" style="text-align: justify;">
+                                <h3  id="Sobre-o-RPG">Polarys</h3>
+
+                                <hr />
+                                <p>
+                                    <I>O idealista imperioso, Místico perfeccionista, Mestre das runas e encantamentos e dos bons ideais, O inabalável.</I>
+                                </p>
+                                <ul>
+                                    <li><b>Símbolo:</b> A Runa de Abstratus</li>
+                                    <li><b>Nação Abençoada:</b> Quilborg do Sul</li>
+                                    <li><b>Tendência:</b> Caótico/Neutro</li>
+                                    <li><b>Portfólio:</b> Runas, Conhecimento Místico, Encantamentos, Idealismo, Honra</li>
+                                    <li><b>Adoradores:</b> Xamãs, Caçadores, Magos, Paladinos, Feiticeiros, Guerreiros, Pessoas de Honra e Bons Costumes, Aristrocratas, Nobres e Idealistas</li>
+                                    <li><b>Domínios:</b> Runas, Glória, Magia, Caça, Lei</li>
+                                    <li><b>Arma:</b> Lança</li>
+                                    <li><b>Outros Nomes:</b> Não possui</li>
+                                </ul>
+                                <p>
+                                    <b>Dogma:</b> oder, honra e perfeccionismo, são 3 das muitas chaves dos mandamentos de Polarys. Ele ensina a seus seguidores que o poder deve ser merecido e para ser um merecedor duas coisas são vitais: dignidade e perfeição. A honra e nobreza é algo belo e ideal aos olhos do deus, e o esforço e idealismo, virtudes necessárias para qualquer um.
+                                </p>
+                                <p>
+                                    Os bons ideais são os principais fatores que reinam na doutrina de Polarys, isso faz com que seus seguidores sejam geralmente destacados dos seus demais semelhantes no que fazem, pois dão o melhor de si e pelas melhores das causas.
+                                </p>
+                                <p>
+                                    Polarys, no entanto, não condena os que perdem as esperanças ou cansam de tentar, mas os ajuda a recobrar a vontade à muito perdida em suas almas e seus corações, desde que seus objetivos sejam puros e sinceros. Isso o faz ser adorado não apenas pelos que acreditam no idealismo, como nos que procuram se tornar melhores pessoas, mesmo sem ter sucesso.
+                                </p>
+                                
+                                
+             
+                            </div>
+
+
+
+                            <!-- Galeria -->
+                            <div class="col-md-10 text-wrap" style="text-align: justify;">
+
+
+                                <h3  id="">Galeria</h3>
+
+                                </hr>
+
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-block w-100" src="static/img/producao_drakonium.jpeg" alt="First slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>A Produção de Drakonium</h5>
+                                            <p>Primeira indústria de refinamento de Drakonium inalgurada em Kaiser, capital de Umbra.</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/exercito_umbro.jpeg" alt="Second slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>O Exército Umbro</h5>
+                                            <p>Liderança do Cavaleiro Negro, momentos após o General Molchat declarar a Guerra.</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/invasoes_quilborg.jpeg" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Marcha a Frihet</h5>
+                                            <p>Movimentações do imperio umbro após os ataques as tribos livres.</p>
+                                        </div>
+                                      </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/invasoes_quilborgs.jpeg" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>As Invasões</h5>
+                                            <p>Destruição das tribos de Quilborg do Norte.</p>
+                                        </div>
+                                      </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block w-100" src="static/img/Dicatombe.jpeg" alt="Third slide" width="1200" height="700">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Resistência Atlaniáde</h5>
+                                            <p>O início de uma Grande Batalha.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" src="static/img/Runic_Wars.jpg" alt="Third slide" width="1200" height="700">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>O impacto da Dicatombe</h5>
+                                        <p>O campo de batalha e a destruição causada pela batalha.</p>
+                                    </div>
+                                  </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+                             </div>
+
+
+
+
+                        </div>
+                    </div>
+              </wiki-page>
+
+
+              <!-- Rodapé -->
+              <footer>
+                <div id="contact-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <h3 class="footer-title">Fale conosco</h3>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-tile">Ligue para:</span> (31) 4002-8922</p>
+                        <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-tile">Envie um email:</span> luiz.w8w@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-tile">Venha tomar um café:</span> Rua dos Bobos - nº 0</p>
+                        </div>
+                        <div class="col-md-6" id="msg-box">
+                        <p>Deixe uma mensagem para que o Clodoaldo nos entregue:</p>
+
+                        <div class="clodoaldo">
+                            <img src="/static/img/pigeon.jpg" alt="Clodoaldo, O pombo" style="width:175px;height:175px;">
+                        </div>
+                        </div>
+                        <div class="col-md-6" id="contact-form">
+                        <form>
+                            <input type="text" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                            <input type="submit" class="main-btn" value="Voa Mlk!">
+                        </form>
+                        </div>
+                    </div>
+
+                </div>
+                <img src="static/img/DrakoniaLogoPNG.png" alt="Logo, Logo" style="width:250px;height:250px;">
+                </div>
+                <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://www.youtube.com/watch?v=hAx4Lql_-VI" target="_blank">Blind Rooster</a> &copy; 2024</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+
+
+
+  <!-- Scripts do projeto -->
+    <script src="static/scripts.js"></script>
+    </body>
 </html>
