@@ -407,7 +407,7 @@ input:checked + .dot-info span {
   display: none;
 }
 
-input[data-description="50"]:checked ~ #timeline-descriptions-wrapper p[data-description="50"] {
+input[data-description="0"]:checked ~ #timeline-descriptions-wrapper p[data-description="0"] {
   display: block;
 }
 
@@ -450,7 +450,7 @@ input[data-description="3050"]:checked ~ #timeline-descriptions-wrapper p[data-d
 
 
 
-input[data-description="50"]:checked ~ #timeline-descriptions-wrapper h5[data-description="50"] {
+input[data-description="0"]:checked ~ #timeline-descriptions-wrapper h5[data-description="0"] {
   display: block;
 }
 
